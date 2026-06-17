@@ -3,13 +3,13 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  
 }
 
 body{
   margin: 0;
   padding: 0;
 }
+
 .navbar{
   display: flex;
   padding-left: 3em;
@@ -25,10 +25,17 @@ body{
   font-weight: 800;
   font-style: normal;
 }
+
+.navbar h3{
+  font-family: "climate crisis", sans-serif;
+  font-weight: 800;
+}
+
 .ul-navbar{
   display: flex;
   list-style-type: none;
   gap: 20px;
+  justify-content: space-evenly;
 }
 
 .navbar a{
@@ -36,6 +43,7 @@ body{
   color: black;
   font-weight: 800;
 }
+
 .btn-download{
   background-color: white;
   padding: 0.5em;
@@ -47,18 +55,94 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
+
+h1 {
+  font-family : "climate crisis", sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: 900;
+ 
+}
+
+#paragraphe{
+  font-family : "climate crisis", sans-serif;
+  font-weight: 900;
+  color : #834dff;
+}
+
 #header{
   background-color: beige;
   width: 100%;
   height: 100vh;
 }
+
 img{
-  padding: 200px;
+  padding:200px;
   width: 200px;
 }
-.head{
+
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+
+.lien{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.head{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section1{
+  display: flex;
+flex-direction: row;
+gap: 40px;
+
+}
+
+.p{
+  text-align: center;
+}
+
+#section1{
+  background-color: #F4F7FB;
+  height: 50vh;
+
+  padding: 0%;
+  margin:0px ;
+}
+#section1 h2{
+  font-family : "climate crisis", sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: 900;
+  color : black;
+}
+
+#contenue-persona{
+  display: flex;
+  flex-direction: column;
+}
+.persona{
+  display: flex;
+  flex-direction: row;
+}
+.section2{
+  background-color: #8C63E6;
+
+}
+
+.section3{
+  background-color: #FD7BA2;
+ 
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center
 }
