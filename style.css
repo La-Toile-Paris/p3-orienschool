@@ -248,6 +248,7 @@ header img{
     gap: 25px;
 }
 .forme-card{
+  background-color: white;
     height: 180px;
     padding: 30px 25px;
     border: 4px solid black;
@@ -312,4 +313,31 @@ header img{
 
 .section5{
   background-color: #66D57E;
+}
+.section5 h3{
+  text-align: center;
+}
+.section0{
+  background-color: ;
+}
+.mission-card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.image-container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  
+}
+.content-container{
+  display: flex;
+ flex-direction: column;
 }
