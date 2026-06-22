@@ -5,6 +5,14 @@ html {
   padding: 0;
 }
 
+p, a {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "poppins", sans-serif;
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -12,6 +20,8 @@ body{
 
 .navbar{
   display: flex;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   padding-left: 3em;
   padding-right: 3em;
   justify-content: space-between;
@@ -26,8 +36,13 @@ body{
   font-style: normal;
 }
 
+.navbar img{
+    width: 40%;
+    height: 40%;
+}
+
 .navbar h3{
-  font-family: "climate crisis", sans-serif;
+  font-family: "poppins", sans-serif;
   font-weight: 800;
 }
 
@@ -37,6 +52,11 @@ body{
   gap: 20px;
   justify-content: space-evenly;
 }
+.ul-header{
+    display: flex;
+  list-style-type: none;
+  gap: 32px;
+}
 
 .navbar a{
   text-decoration: none;
@@ -44,7 +64,7 @@ body{
   font-weight: 800;
 }
 
-.btn-download{
+.btn-doc{
   background-color: white;
   padding: 0.5em;
   border: 2.5px solid #1a1a1a;
@@ -55,31 +75,37 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 50px;
 }
 
 h1 {
-  font-family : "climate crisis", sans-serif;
+  font-family : "poppins", sans-serif;
   letter-spacing: 0.1em;
+  line-height: 90%;
+  font-size: 4em;
   font-weight: 900;
  
 }
 
 #paragraphe{
-  font-family : "climate crisis", sans-serif;
+  font-family : "poppins", sans-serif;
   font-weight: 900;
   color : #834dff;
 }
 
 #header{
   background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
+  overflow: hidden;
 }
 
-img{
-  padding:200px;
-  width: 200px;
-}
+/* img{
+  
+} */
 
 a{
   text-decoration: none;
@@ -91,12 +117,31 @@ a{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 40%;
+
+}
+
+
+#header .ul-header a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: white;
+    padding: 1em;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px #1a1a1a;
+}
+.ul-header img{
+    width: 32px;
+    height: 32px;
 }
 
 .head{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .section1{
@@ -111,14 +156,61 @@ gap: 40px;
 }
 
 #section1{
-  background-color: #F4F7FB;
-  height: 50vh;
-
+  display: flex;
+  flex-direction: column;
+  background-color: #8C63E6;
+  max-width: 100%;
+  min-height: 110vh;
+  justify-content: center;
+  align-items: center;
   padding: 0%;
   margin:0px ;
+  justify-content: space-evenly;
 }
+
+.elise{
+    border-radius: 100%;
+    height: 1%;
+    width: 50%;
+}
+
+header img{
+  max-width: 100%;
+  width: 500px;
+  height: 500px;    
+  display: block;
+  
+}
+#section2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  min-height: 110vh;
+  background-color: #66D57E;
+}
+#section3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  min-height: 130vh;
+  flex-wrap: wrap;
+  background-color: #ED5C8D;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+
 #section1 h2{
-  font-family : "climate crisis", sans-serif;
+  font-family : "poppins", sans-serif;
   letter-spacing: 0.1em;
   font-weight: 900;
   color : black;
@@ -127,22 +219,33 @@ gap: 40px;
 #contenue-persona{
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .persona{
   display: flex;
-  flex-direction: row;
-}
-.section2{
-  background-color: #8C63E6;
-
+  gap: 20px;
 }
 
-.section3{
-  background-color: #FD7BA2;
- 
-}
+
+
 .card{
     display: flex;
     flex-direction: row;
-    align-items: center
+    align-items: center;
+    gap: 100px;
 }
+
+.fonctionnalité{
+    background: #c152c1;
+    padding: 80px 60px;
+    text-align: center;
+}
+.card-fonctionnalités{
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    justify-content: center;
+    gap: 25px;
+}
+
+
+
