@@ -1,3 +1,7 @@
+:root{
+  --height-section: 92vh;
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -34,6 +38,7 @@ body{
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
+  height: 8vh;
 }
 
 .navbar img{
