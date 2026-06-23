@@ -2,10 +2,10 @@
 h1 {
   font-family : "poppins", sans-serif;
   letter-spacing: 0.1em;
-  line-height: 90%;
+  line-height: 95%;
   font-size: 4em;
   font-weight: 900;
- 
+ margin: 0;
 }
 
 #paragraphe{
@@ -38,8 +38,12 @@ a{
   width: 40%;
   height: var(--height-section);
     flex-direction: column;
-    justify-content: space-around;
+  
+    justify-content: center;
+    
+    align-items: flex-start;
     padding-left: 4vw;
+    padding-bottom: 3vh;
 }
 
 
@@ -65,6 +69,8 @@ a{
     justify-content: center;
     gap: 15px;
     list-style: none;
+    margin: 0;
+    padding: 0;
 
 }
 .ul-header img{
@@ -151,7 +157,10 @@ header{
 }
 
 
-
+.telephones img {
+    width: 0px;
+    max-width: 100%;
+    }
 
 
 .card{
@@ -432,22 +441,19 @@ strong{
 
 
 #avatar{
-   width: 70px;
+   width: 90px;
    border-radius: 50%;
    border: 2px solid black;
 }
-#avat{
-   width: 20px;
-   border-radius: 10%;
-   
-}
+
 
 
    .action{
-    display: flex;
-   flex-direction: row;
-   align-items: center;
-   gap: 20px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-evenly;
    }
 
    .tem{
@@ -475,3 +481,12 @@ a:active {
     transform: translate(4px, 4px);
     box-shadow: 0px 0px 0px #000000;
 }
+
+
+#telechargement{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 300px;
+}
+
