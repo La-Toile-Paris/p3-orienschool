@@ -1,1 +1,291 @@
 /* Le code CSS spécifique à la page de documentation */
+
+
+
+
+body{
+    background-color: antiquewhite;
+}
+h1, h2, h3{
+    margin: 0;
+}
+p{
+    margin: 0;
+    font-weight: 600;
+}
+.logo{
+    width: 10%;
+    height: 10%;
+}
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.header-all{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+.header-texte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    
+}
+.btn-app{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    background-color: white;
+    padding: 1em;
+    border: 2.5px solid #1a1a1a;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0px #1a1a1a;
+    color: black;
+    gap: 5px;
+}
+
+.btn-app img{
+    width: 20px;
+    height: 20px;
+}
+.btn-app-div{
+    display: flex;
+    gap: 20px;
+}
+.telephone{
+    height: 600px;
+    width: 300px;
+}
+.theme{
+    background-color: #66D57E;
+    padding: 0.5em;
+    border-radius: 20px;
+    border: 2.5px solid #1a1a1a;
+    color: black;
+    font-weight: 800;
+}
+.theme2{
+    background-color: #FAF4E6;
+    padding: 0.5em;
+    border-radius: 20px;
+    border: 2.5px solid #1a1a1a;
+    display: inline-block;
+    color: black;
+    font-weight: 800;
+}
+.theme3{
+    background-color: #ffffff;
+    padding: 0.5em;
+    border-radius: 20px;
+    border: 2.5px solid #1a1a1a;
+    display: inline-block;
+    color: black;
+    font-weight: 800;
+    margin-bottom: 5em;
+}
+.theme4{
+    background-color: #ffffff;
+    padding: 0.5em;
+    border-radius: 20px;
+    border: 2.5px solid #1a1a1a;
+    display: inline-block;
+    color: black;
+    font-weight: 800;
+    margin-bottom: 1em;
+}
+.theme5{
+    background-color: #ffffff;
+    padding: 0.5em;
+    border-radius: 20px;
+    border: 2.5px solid #1a1a1a;
+    display: inline-block;
+    color: black;
+    font-weight: 800;
+    margin-bottom: 1em;
+}
+
+#section1{
+    background-color: #8C63E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.section1-all{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.section1-titre{
+    width: 500px;
+    font-size: larger;
+}
+.garcon{
+    width: 25em;
+    height: 25em;
+    background-color: antiquewhite;
+    border: 2.5px solid #1a1a1a;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0px #1a1a1a;
+}
+.section1-all .section1-titre, #section1 h1 {
+    color: rgb(0, 0, 0);
+}
+#section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150vh;
+    background-color: #66D57E;
+}
+
+.section2-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.elise{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 2.5px solid #1a1a1a;
+    box-shadow: 3px 3px 0px #1a1a1a;
+} 
+
+.carte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: antiquewhite;
+    padding: 2em;
+    width: 40%;
+    height: 200px;
+    border-radius: 30px;
+    border: 2.5px solid #1a1a1a;
+    box-shadow: 3px 3px 0px #1a1a1a;
+}
+.carte h1,.carte p {
+    color: white;
+}
+.cibles{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.cibles-texte{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.cibles-texte h1, .cibles-texte p {
+    color: black;
+}
+.cartes{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+    
+}
+.nom-persona{
+    margin-bottom: 100px;
+}
+.personna-et-texte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.persona-texte{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    background-color: antiquewhite;
+    width: 400px;
+    height: fit-content;
+    padding: 1em;
+    border: 2.5px solid #1a1a1a;
+    border-radius: 30px;
+    box-shadow: 3px 3px 0px #1a1a1a;
+}
+#section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150vh;
+    background-color: #ED5C8D;
+}
+.section3-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section3-all h1{
+    margin-bottom: 2em;
+}
+#section4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #FCA24A;
+}
+.section4-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cartes-nous{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.carte-nous{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 300px;
+    height: 300px;
+    background-color: antiquewhite;
+    border: 2.5px solid #1a1a1a;
+    border-radius: 20px;
+    box-shadow: 3px 3px 0px #1a1a1a;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 25vh;
+    background-color: #8005F2;
+}
+.bitmoji{
+    width: 30%;
+    height: 30%;
+}
