@@ -490,3 +490,24 @@ a:active {
     gap: 300px;
 }
 
+.theme2{
+    background-color: #FAF4E6;
+    padding: 0.5em;
+    border-radius: 20px;
+    border: 2.5px solid #1a1a1a;
+    display: inline-block;
+    color: black;
+    font-weight: 1000;
+    font-size: large;
+}
+
+#theme3{
+      background-color: #FAF4E6;
+    padding: 0.5em;
+    border-radius: 20px;
+    border: 2.5px solid #1a1a1a;
+    display: inline-block;
+    color: black;
+    font-weight: 1000;
+    font-size: large;
+}
