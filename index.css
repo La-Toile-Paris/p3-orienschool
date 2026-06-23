@@ -47,12 +47,25 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+   
+    flex-direction: row;
     background-color: white;
     padding: 1em;
     border: 2.5px solid black;
     border-radius: 10px;
     box-shadow: 3px 3px 0px #1a1a1a;
+  
+   
+    gap: 15px;
+    list-style: none;
+}
+.ul-header {
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+
 }
 .ul-header img{
     width: 32px;
@@ -369,4 +382,22 @@ strong{
     justify-content: center;
     gap: 15px;
     list-style: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.lien-telecharger{
+    display: flex;
+    flex-direction: row;
+}
+.theme_q{
+    background-color: #66D57E;
+    padding: 0.5em;
+    border-radius: 20px;
+    border: 2.5px solid #1a1a1a;
+    color: black;
+    font-weight: 800;
 }
