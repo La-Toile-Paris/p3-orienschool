@@ -12,6 +12,7 @@ body {
   width: 100%;
   min-height: 100vh;
   padding: 60px 40px;
+  padding-top: 120px;
   box-sizing: border-box;
 }
 
