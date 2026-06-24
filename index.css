@@ -202,9 +202,9 @@ header{
     min-height: 350px;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 150px;
+    gap: 100px;
 
     padding: 100px 100px;
     box-sizing: border-box;
@@ -258,7 +258,7 @@ header{
 
 
 .telephones img {
-    width: 600px;
+    width: 700px;
     max-width: 100%;
 }
  
