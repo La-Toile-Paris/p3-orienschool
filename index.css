@@ -12,6 +12,7 @@
   background-repeat: no-repeat;
   background-position: bottom right;
   min-height: 100vh;
+  padding-top: 80px;
 }
 
 .head {
@@ -85,75 +86,66 @@
 }
 
 /* Section 1 - Stats */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 #section1 {
   width: 100%;
-  min-height: 300vh;
-  padding: 100px 10%;
+  min-height: 100vh;
+  padding: 80px 0;
+  padding-top: 120px;
   box-sizing: border-box;
   background-color: #E8E0FB;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   position: relative;
 }
 
 .section1 {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  gap: 200px;
+  gap: 0;
   width: 100%;
-  max-width: 1000px;
   height: fit-content;
 }
 
 .section1 h2 {
-  font-size: 4em;
-  line-height: 95%;
-  font-weight: 900;
+  font-size: 2em;
+  line-height: 1.3;
+  font-weight: 700;
   font-family: 'Poppins', sans-serif;
   color: black;
   margin: 0;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   text-align: center;
-  width: 100%;
-  position: sticky;
-  height: fit-content;
-  min-height: 30vh;
+  width: 50vw;
+  padding: 40px 3vw;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 60vh;
 }
 
 .section1 h2:nth-of-type(1) {
-  top: 10vh;
+  background-color: #E8E0FB;
 }
 
 .section1 h2:nth-of-type(2) {
-  top: 10vh;
+  background-color: #E8E0FB;
 }
 
 .section1 strong {
   color: #d98c8c;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 #section1 .p {
-  position: sticky;
-  top: 10vh;
-  height: fit-content;
-  margin-top: 50vh;
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+  text-align: center;
 }
 
 #section1 .p {
@@ -480,26 +472,30 @@
     justify-content: flex-start;
   }
 
+  #header {
+    padding-top: 60px;
+  }
+
   #section1 {
     min-height: auto;
-    padding: 60px 20px;
+    padding: 60px 0;
+    padding-top: 80px;
   }
 
   .section1 {
-    gap: 100px;
+    flex-direction: column;
   }
 
   .section1 h2 {
-    font-size: 2em;
-    position: relative;
-    top: 0 !important;
-    padding: 40px 20px;
+    width: 100%;
+    font-size: 1.6em;
+    padding: 30px 20px;
+    min-height: auto;
   }
 
   #section1 .p {
-    position: relative;
-    top: 0 !important;
     margin-top: 20px;
+    padding: 0 20px;
   }
 
   .section5 {

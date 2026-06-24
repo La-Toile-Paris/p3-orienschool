@@ -28,14 +28,18 @@ a {
 /* ─────────────────────────────────────────────────────── */
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  max-width: 1400px;
-  margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
+  background-color: transparent;
+  z-index: 100;
 }
 
 .navbar a img {
