@@ -202,19 +202,19 @@ header{
     min-height: 350px;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 150px;
 
-    padding: 50px 80px;
+    padding: 100px 100px;
     box-sizing: border-box;
     
 }
 
 .carte {
     background: white;
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    height: 500px;
     border-radius: 10px;
 
     box-shadow: 5px 5px 0 black;
@@ -230,7 +230,7 @@ header{
 }
 
 .nuage {
-    width: 90px;
+    width: 150px;
 
     position: absolute;
     top: -35px;
@@ -251,14 +251,14 @@ header{
 
 .carte p {
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
     line-height: 1.5;
     font-weight: 500;
 }
 
 
 .telephones img {
-    width: 350px;
+    width: 600px;
     max-width: 100%;
 }
  
@@ -447,7 +447,7 @@ strong{
    border: 2px solid black;
 }
 
-ssss
+
 
    .action{
   display: flex;
@@ -488,7 +488,12 @@ a:active {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 300px;
+    gap: 100px;
+}
+
+#telechargement img{
+    width: 500px;
+    height: 500px;
 }
 
 .theme2{
