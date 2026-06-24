@@ -69,7 +69,8 @@ body{
   font-weight: 800;
 }
 
-.btn-doc{
+.btn-doc,
+.btn-download {
   background-color: white;
   padding: 0.5em;
   border: 2.5px solid #1a1a1a;

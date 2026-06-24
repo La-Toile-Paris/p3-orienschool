@@ -22,8 +22,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 4vw;
+  padding-left: calc((100vw - 1200px) / 2 + 40px);
   padding-bottom: 3vh;
+  box-sizing: border-box;
 }
 
 .lien {
@@ -89,7 +90,7 @@
 #section1 {
   width: 100%;
   min-height: 100vh;
-  padding: 100px 5%;
+  padding: 100px 40px;
   box-sizing: border-box;
   background-color: #F5F1EB;
   display: flex;
@@ -176,12 +177,15 @@
   background: #B48BFF;
   width: 100%;
   min-height: 400px;
+  padding: 80px 0;
+  box-sizing: border-box;
+}
+
+.section5-inner {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 80px;
-  padding: 80px 10%;
-  box-sizing: border-box;
 }
 
 .section5 .carte {
@@ -246,10 +250,13 @@
 /* Testimonials - Témoignages */
 .fonctionnalité {
   background: #FFD23F;
-  padding: 80px 40px;
-  text-align: center;
+  padding: 80px 0;
   width: 100%;
   box-sizing: border-box;
+}
+
+.fonctionnalité-inner {
+  text-align: center;
 }
 
 .fonctionnalité .theme2 {
@@ -269,10 +276,8 @@
 .card-fonctionnalités {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  justify-content: center;
   gap: 30px;
-  max-width: 1100px;
-  margin: 0 auto;
+  margin-top: 0;
 }
 
 .forme-card {
@@ -360,6 +365,10 @@
   width: 100%;
   height: 100%;
   min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
   align-items: center;
   justify-content: space-between;
   flex-direction: row-reverse;
@@ -517,9 +526,13 @@
   }
 
   .section5 {
+    padding: 60px 0;
+  }
+
+  .section5-inner {
     flex-direction: column;
-    padding: 60px 20px;
     gap: 40px;
+    padding: 0 20px;
   }
 
   .section5 .carte {
@@ -533,7 +546,11 @@
   }
 
   .fonctionnalité {
-    padding: 60px 20px;
+    padding: 60px 0;
+  }
+
+  .fonctionnalité-inner {
+    padding: 0 20px;
   }
 
   .card-fonctionnalités {
@@ -552,10 +569,6 @@
 
   .forme-card h3 {
     font-size: 1.1em;
-  }
-
-  .fonctionnalité {
-    padding: 60px 20px;
   }
 
   .fonctionnalité h2 {
@@ -583,6 +596,7 @@
     flex-direction: column;
     width: 100%;
     min-height: auto;
+    padding: 0 20px;
   }
 
   .tel-card {
