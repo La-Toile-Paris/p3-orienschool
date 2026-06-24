@@ -22,67 +22,7 @@ body{
   padding: 0;
 }
 
-.navbar{
-  display: flex;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 3em;
-  padding-right: 3em;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  background-color: #8c63e6;
-  border: 2.5px solid #1a1a1a;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  height: 8vh;
-}
 
-.navbar img{
-    width: 40%;
-    height: 40%;
-}
-
-.navbar h3{
-  font-family: "poppins", sans-serif;
-  font-weight: 800;
-}
-
-.ul-navbar{
-  display: flex;
-  list-style-type: none;
-  gap: 20px;
-  justify-content: space-evenly;
-}
-/* .ul-header{
-    display: flex;
-  list-style-type: none;
-  gap: 32px;
-} */
-
-.navbar a{
-  text-decoration: none;
-  color: black;
-  font-weight: 800;
-}
-
-.btn-doc,
-.btn-download {
-  background-color: white;
-  padding: 0.5em;
-  border: 2.5px solid #1a1a1a;
-  border-radius: 5px;
-  box-shadow: 3px 3px 0px #1a1a1a;
-}
-.btn-important{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
 
 /* h1 {
   font-family : "poppins", sans-serif;

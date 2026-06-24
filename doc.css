@@ -464,13 +464,7 @@ body {
   flex-shrink: 0;
 }
 
-/* Footer */
-.footer {
-  background-color: #8C63E6;
-  padding: 60px 40px;
-  box-sizing: border-box;
-  color: white;
-}
+
 
 /* Responsive */
 @media (max-width: 768px) {
