@@ -11,8 +11,6 @@
   background-image: url('./assets/hero/header-image\ 2.png');
   background-repeat: no-repeat;
   background-position: bottom right;
-  min-height: 100vh;
-  padding-top: 60px;
 }
 
 .head {
@@ -95,7 +93,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
 }
 
 .section1 {
@@ -127,6 +124,7 @@
 
 .section1 h2:nth-of-type(2) {
   text-align: right;
+  margin-top: 200px;
 }
 
 .section1 strong {
