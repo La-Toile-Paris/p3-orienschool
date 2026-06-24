@@ -150,22 +150,24 @@
 .section5 {
   background: #B48BFF;
   width: 100%;
-  min-height: 400px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
   padding: 80px 0;
   box-sizing: border-box;
 }
 
 .section5-inner {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   gap: 80px;
 }
 
 .section5 .carte {
   background: white;
-  width: 300px;
-  height: 300px;
+  flex: 0 0 340px;
+  height: 340px;
   border-radius: 10px;
   box-shadow: 5px 5px 0 black;
   display: flex;
@@ -202,11 +204,18 @@
   left: -25px;
 }
 
+.telephones {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .telephones img {
   width: auto;
   max-width: 100%;
   height: auto;
-  max-height: 400px;
+  max-height: 65vh;
 }
 
 #quiz {
@@ -466,6 +475,7 @@
   }
 
   .section5 {
+    min-height: auto;
     padding: 60px 0;
   }
 
@@ -476,8 +486,11 @@
   }
 
   .section5 .carte {
+    flex: none;
     width: 100%;
     max-width: 350px;
+    height: auto;
+    min-height: 280px;
   }
 
   .telephones img {
