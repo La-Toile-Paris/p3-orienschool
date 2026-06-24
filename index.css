@@ -85,6 +85,17 @@
 }
 
 /* Section 1 - Stats */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 #section1 {
   width: 100%;
   min-height: 100vh;
@@ -100,8 +111,8 @@
 .section1 {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 80px;
+  align-items: center;
+  gap: 100px;
   width: 100%;
   max-width: 1200px;
 }
@@ -116,15 +127,20 @@
   margin: 0;
 }
 
-.section1 strong {
-  color: #d98c8c;
-  font-size: 1.2em;
+.section1 h2:nth-of-type(1) {
+  animation: slideInRight 0.8s ease-out;
 }
 
 .section1 h2:nth-of-type(2) {
   position: sticky;
-  top: 50vh;
+  top: 45%;
   height: fit-content;
+  animation: slideInRight 0.8s ease-out 0.3s both;
+}
+
+.section1 strong {
+  color: #d98c8c;
+  font-size: 1.2em;
 }
 
 #section1 .p {
@@ -297,83 +313,79 @@
   font-style: italic;
 }
 
-/* Download section */
+/* Download section - same style as hero */
 .telechargement {
   background-color: #4FC287;
-  padding: 80px 40px;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-family: 'Poppins', sans-serif;
   width: 100%;
+  min-height: 100vh;
   box-sizing: border-box;
-  min-height: auto;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
 }
 
 .telechargement .main-title {
+  position: absolute;
+  top: 30px;
+  left: 4vw;
   color: black;
-  font-size: 2.8em;
+  font-size: 2em;
   font-weight: 900;
-  margin-bottom: 60px;
+  margin: 0;
   letter-spacing: 0.05em;
-  text-align: center;
+  z-index: 1;
 }
 
 .telechargement-content {
   display: flex;
-  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
   align-items: center;
-  justify-content: center;
-  gap: 80px;
-  max-width: 1400px;
-  width: 100%;
-}
-
-.tel-image {
-  width: 100%;
-  max-width: 420px;
-  height: auto;
-  object-fit: contain;
-  flex-shrink: 0;
+  justify-content: space-between;
 }
 
 .tel-card {
-  background-color: #E2E1D9;
-  flex: 1;
-  min-width: 300px;
-  padding: 50px 45px;
-  text-align: center;
-  border-radius: 8px;
-  border: 3px solid black;
-  box-shadow: 5px 5px 0px black;
   display: flex;
+  width: 40%;
+  min-height: 100vh;
   flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 4vw;
+  gap: 1.5em;
 }
 
 .tel-title {
-  color: #5D12B2;
-  font-size: 2.2em;
+  color: black;
+  font-size: 4em;
   font-weight: 900;
   margin: 0;
-  letter-spacing: 0.05em;
-  line-height: 1.3;
+  letter-spacing: 0.1em;
+  line-height: 95%;
+  max-width: 600px;
 }
 
 .tel-description {
   color: #333333;
-  font-size: 1.05em;
+  font-size: 1.1em;
   font-weight: 600;
   margin: 0;
-  line-height: 1.7;
+  line-height: 1.6;
+  max-width: 500px;
 }
 
 .tel-buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 15px;
-  margin-top: 10px;
+  margin-top: 0.5em;
+  list-style: none;
+  margin: 1em 0 0 0;
+  padding: 0;
 }
 
 .tel-button {
@@ -384,37 +396,46 @@
   background-color: white;
   color: black;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 0.95em;
   font-weight: 800;
-  padding: 14px 28px;
-  border-radius: 10px;
+  padding: 1em 1.5em;
   border: 2.5px solid black;
-  box-shadow: 4px 4px 0px black;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0px #1a1a1a;
   transition: all 0.15s ease;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 .tel-button:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0px black;
+  box-shadow: 5px 5px 0px #1a1a1a;
 }
 
 .tel-button:active {
   transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0px black;
+  box-shadow: 1px 1px 0px #1a1a1a;
 }
 
 .tel-button.primary {
-  background-color: #8C52FF;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .tel-button img {
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
+}
+
+.tel-image {
+  width: 60%;
+  height: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
 }
 
 /* Responsive */
@@ -509,38 +530,57 @@
   }
 
   .telechargement {
-    padding: 60px 20px;
+    min-height: auto;
+    padding: 0;
+  }
+
+  .telechargement .main-title {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 40px 20px 0 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.8em;
   }
 
   .telechargement-content {
     flex-direction: column;
-    gap: 40px;
-  }
-
-  .tel-image {
-    max-width: 100%;
     width: 100%;
+    min-height: auto;
   }
 
   .tel-card {
-    padding: 35px 25px;
-    border-radius: 12px;
+    width: 100%;
+    min-height: auto;
+    padding: 40px 20px;
+    align-items: center;
+    text-align: center;
   }
 
   .tel-title {
-    font-size: 1.6em;
+    font-size: 2em;
+    max-width: 100%;
   }
 
   .tel-description {
     font-size: 0.95em;
+    max-width: 100%;
   }
 
   .tel-buttons {
     flex-direction: column;
+    width: 100%;
+    gap: 12px;
   }
 
   .tel-button {
     width: 100%;
+  }
+
+  .tel-image {
+    width: 100%;
+    min-height: 300px;
   }
 }
 

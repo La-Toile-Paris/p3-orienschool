@@ -34,6 +34,7 @@ body{
   border-bottom-right-radius: 20px;
   background-color: #8c63e6;
   border: 2.5px solid #1a1a1a;
+  border-top: 0px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
