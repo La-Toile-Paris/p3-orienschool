@@ -20,7 +20,7 @@ gsap.to(h2s[0], {
 
 gsap.to(h2s[1], {
   opacity: 1,
-  y: 0,
+  y: 40,
   duration: 1,
   ease: 'power3.out',
   delay: 0.25,
