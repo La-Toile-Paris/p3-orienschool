@@ -1,80 +1,11 @@
 /* Le code CSS spécifique à la page de documentation */
 
-/* Body */
 body {
     background-color: antiquewhite;
 }
 
-h1, h2, h3 {
-    margin: 0;
-}
-
 p {
-    margin: 0;
     font-weight: 600;
-}
-
-.logo {
-    width: 10%;
-}
-
-/* ── Badges thème ──────────────────────────────────────────────────────────── */
-
-.theme {
-    background-color: #66D57E;
-    padding: 0.5em 1em;
-    border-radius: 20px;
-    border: 2.5px solid #1a1a1a;
-    color: black;
-    font-weight: 800;
-    font-size: 1em;
-    display: inline-block;
-}
-
-.theme2 {
-    background-color: #FAF4E6;
-    padding: 0.5em 1em;
-    border-radius: 20px;
-    border: 2.5px solid #1a1a1a;
-    display: inline-block;
-    color: black;
-    font-weight: 800;
-    font-size: 1em;
-}
-
-.theme3 {
-    background-color: #ffffff;
-    padding: 0.5em 1em;
-    border-radius: 20px;
-    border: 2.5px solid #1a1a1a;
-    display: inline-block;
-    color: black;
-    font-weight: 800;
-    margin-bottom: 2em;
-    font-size: 1em;
-}
-
-.theme4 {
-    background-color: #ffffff;
-    padding: 0.5em 1em;
-    border-radius: 20px;
-    border: 2.5px solid #1a1a1a;
-    display: inline-block;
-    color: black;
-    font-weight: 800;
-    margin-bottom: 1em;
-    font-size: 1em;
-}
-
-.theme5 {
-    background-color: #ffffff;
-    padding: 0.5em 1em;
-    border-radius: 20px;
-    border: 2.5px solid #1a1a1a;
-    display: inline-block;
-    color: black;
-    font-weight: 800;
-    font-size: 1em;
 }
 
 /* ── Sections — padding uniforme ──────────────────────────────────────────── */
