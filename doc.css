@@ -114,18 +114,19 @@ p {
 .header-all {
     display: flex;
     flex-direction: row-reverse; /* image à gauche, texte à droite */
-    justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 0;
 }
 
 .header-texte {
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    padding-left: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 24px;
-    flex: 1;
 }
 
 #header h1 {
@@ -179,9 +180,13 @@ p {
 }
 
 .telephone {
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    padding-right: 40px;
     height: 65vh;
+    width: 50%;
     object-fit: contain;
-    flex-shrink: 0;
+    display: block;
 }
 
 /* ── Section 1 — Contexte ─────────────────────────────────────────────────── */
@@ -364,7 +369,7 @@ p {
 .section4-cartes {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
     flex-direction: row;
     gap: 30px;
     flex-wrap: wrap;
@@ -431,7 +436,7 @@ p {
 .section5-cartes {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-direction: row;
     gap: 30px;
     flex-wrap: wrap;
@@ -484,11 +489,15 @@ p {
     }
 
     .header-texte {
+        flex: 0 0 100%;
+        padding-left: 0;
         align-items: center;
     }
 
     .telephone {
-        width: 60%;
+        flex: 0 0 auto;
+        width: 70%;
+        padding-right: 0;
         height: auto;
         max-height: 40vh;
     }
@@ -556,10 +565,6 @@ p {
 
     #header {
         padding-top: 120px;
-    }
-
-    .header-all {
-        gap: 40px;
     }
 
     .section1-all {
