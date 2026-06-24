@@ -190,8 +190,8 @@ p{
 
 .elise{
     border-radius: 50%;
-    width: 20em;
-    height: 20em;
+    width: 25em;
+    height: 25em;
     object-fit: cover;
     border: 2.5px solid #1a1a1a;
     box-shadow: 3px 3px 0px #1a1a1a;
@@ -199,16 +199,22 @@ p{
 
 .carte{
     display: flex;
+    
     justify-content: center;
     align-items: center;
     gap: 20px;
     background-color: antiquewhite;
-    padding: 2em;
     width: 40%;
     height: 25vh;
+    min-height: fit-content;
+    padding: 2em;
     border-radius: 30px;
     border: 2.5px solid #1a1a1a;
     box-shadow: 3px 3px 0px #1a1a1a;
+}
+.espoirs-image{
+    width: 13%;
+    height: 10vh;
 }
 
 .carte h1,.carte p {
@@ -258,15 +264,16 @@ p{
     gap: 20px;
     flex-direction: column;
     background-color: antiquewhite;
-    width: 50%;
-    height: 40vh;
-    padding: 2em;
+    width: fit-content;
+    height: fit-content;
+    padding: 3em;
     border: 2.5px solid #1a1a1a;
     border-radius: 30px;
     box-shadow: 3px 3px 0px #1a1a1a;
 }
 .ul-persona{
-    list-style: none;
+    padding: 0;
+    
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -304,7 +311,28 @@ p{
     padding-top: 5em;
     padding-bottom: 5em;
 }
+.section4-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section4-cartes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.section4-carte{
+    background-color: white;
+    border: 2.5px solid #1a1a1a;
+    border-radius: 30px;
+    box-shadow: 3px 3px 0px #1a1a1a;
+    padding: 2em;
 
+}
 
 
 
@@ -523,9 +551,6 @@ p{
         width: 60%;
         height: 20vh;
     }
-    #section2{
-        height: 200vh;;
-    }
     .carte{
         width: 80%;
         height: 30vh;
@@ -539,8 +564,11 @@ p{
     }
     .persona-texte{
         width: 80%;
-        height: 20vh;
+        min-height: fit-content;
     
+}
+.section4-carte{
+    width: 80%;
 }
     /* #section5{
         height: 200vh;
