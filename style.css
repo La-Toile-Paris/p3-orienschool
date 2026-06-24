@@ -1,3 +1,7 @@
+:root{
+  --height-section: 92vh;
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -34,6 +38,7 @@ body{
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
+  height: 8vh;
 }
 
 .navbar img{
@@ -122,21 +127,6 @@ body{
 }
 
 
-#header .ul-header a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    background-color: white;
-    padding: 1em;
-    border: 2.5px solid black;
-    border-radius: 10px;
-    box-shadow: 3px 3px 0px #1a1a1a;
-}
-.ul-header img{
-    width: 32px;
-    height: 32px;
-}
 
 .head{
   display: flex;
@@ -167,6 +157,7 @@ gap: 40px;
   margin:0px ;
   justify-content: space-evenly;
 }
+strong{}
 
 .elise{
     border-radius: 100%;
