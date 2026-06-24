@@ -383,8 +383,239 @@ p{
     gap: 100px;
     width: 100%;
 }
-.bitmoji{
-    width: 30%;
-    height: 30%;
+.logo-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+    padding-top: 3em;
+}
+ 
+
+ 
+.colonne h3 {
+    font-size: 38px;
+    font-weight: 900;
+    margin-bottom: 25px;
+    text-shadow: 3px 3px 0px black;
+}
+ 
+ 
+.colonne ul {
+    list-style: none;
+    padding: 0;
+}
+ 
+.colonne ul li {
+    margin-bottom: 18px;
+}
+ 
+.colonne ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: 2px 2px 0px black;
+}
+ 
+ 
+.colonne form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+ 
+.colonne input {
+    width: 90%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}
+ 
+.colonne p {
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 2px 2px 0px black;
+}
+ 
+ 
+.reseaux {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+ 
+.reseaux a {
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.reseaux img {
+    width: 35px;
+    height: 35px;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Format téléphone PAS TOUCHER     */
+
+@media (max-width :768px) {
+    .header-all{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        
+    }
+    .header-texte{
+        text-align: center;
+        width: 80%;
+    }
+    .telephone{
+        width: 40%;
+        height: 40vh;
+    }
+    .section1-all{
+        flex-direction: column;
+    }
+    .section1-texte{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1-titre{
+        text-align: center;
+        width: 90%;
+    }
+    .garcon{
+        width: 60%;
+        height: 35vh;
+    }
+    .telephone2{
+        width: 60%;
+        height: 20vh;
+    }
+    #section2{
+        height: 200vh;;
+    }
+    .carte{
+        width: 80%;
+        height: 30vh;
+    }
+    .cartes{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .personna-et-texte{
+        flex-direction: column;
+    }
+    .persona-texte{
+        width: 80%;
+        height: 20vh;
+    
+}
+    /* #section5{
+        height: 200vh;
+    } */
+    .section5-cartes{
+        flex-direction: column;
+    }
+    .footer-contenu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .header-all{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        
+    }
+    .header-texte{
+        text-align: center;
+        width: 80%;
+    }
+    .telephone{
+        width: 40%;
+        height: 40vh;
+    }
+    .section1-all{
+        flex-direction: column;
+    }
+    .section1-texte{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1-titre{
+        text-align: center;
+        width: 90%;
+    }
+    .garcon{
+        width: 60%;
+        height: 35vh;
+    }
+    .telephone2{
+        width: 60%;
+        height: 20vh;
+    }
+    #section2{
+        height: 200vh;;
+    }
+    .carte{
+        width: 80%;
+        height: 30vh;
+    }
+    .cartes{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .personna-et-texte{
+        flex-direction: column;
+    }
+    .persona-texte{
+        width: 80%;
+        height: 20vh;
+    
+}
+    /* #section5{
+        height: 200vh;
+    } */
+    .section5-cartes{
+        flex-direction: column;
+    }
+    .footer-contenu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
