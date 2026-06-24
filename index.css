@@ -159,6 +159,32 @@
   box-sizing: border-box;
 }
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+
+    padding: 100px 100px;
+    box-sizing: border-box;
+    
+}
+
+.carte {
+    background: white;
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 0 black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    border: 2px solid black;
 .section5-inner {
   display: flex;
   justify-content: space-around;
@@ -200,21 +226,44 @@
 }
 
 .nuage {
-  width: 90px;
-  position: absolute;
-  top: -35px;
-  left: -25px;
+    width: 90px;
+
+    position: absolute;
+    top: -35px;
+    left: -25px;
 }
+
+
+.carte h3 {
+    background: #ffffff;
+    border: 2px solid black;
+    padding: 5px 18px;
+    border-radius: 20px;
+
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+.carte p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
 
 .telephones img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 400px;
+    width: 350px;
+    max-width: 100%;
 }
+ 
 
-#quiz {
-  background-color: #FCA24A;
+  
+
+
+strong{
+    color: #ED5C8D;
 }
 
 #explorer {
@@ -438,51 +487,17 @@
   flex-shrink: 0;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  #header {
-    background-position: bottom center;
-    background-size: cover;
-  }
 
-  .head {
-    width: 100%;
-    padding: 40px 20px;
-  }
+#avatar{
+   width: 100px;
+   border-radius: 50%;
+   border: 2px solid black;
+}
 
-  #header h1 {
-    font-size: 2.5em;
-  }
+ssss
 
-  #header p {
-    font-size: 1em;
-  }
-
-  .ul-header {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  #header .ul-header a {
-    width: 100%;
-    justify-content: flex-start;
-  }
-
-  .navbar {
-    width: calc(100% - 40px);
-    margin: 10px auto;
-  }
-
-  #header {
-    padding-top: 120px;
-  }
-
-  #section1 {
-    padding: 80px 20px;
-    min-height: auto;
-  }
-
-  .section1 {
+   .action{
+  display: flex;
     flex-direction: column;
     gap: 40px;
   }
@@ -582,50 +597,28 @@
     padding: 40px 20px;
     padding-right: 20px;
     align-items: center;
-    text-align: center;
-  }
-
-  .tel-title {
-    font-size: 2em;
-    max-width: 100%;
-  }
-
-  .tel-description {
-    font-size: 0.95em;
-    max-width: 100%;
-  }
-
-  .tel-buttons {
-    flex-direction: column;
-    width: 100%;
-    gap: 12px;
-  }
-
-  .tel-button {
-    width: 100%;
-  }
-
-  .tel-image {
-    width: 100%;
-    height: 300px;
-  }
+    gap: 300px;
 }
 
-@media (max-width: 1024px) {
-  #header {
-    padding: 0 20px;
-  }
-
-  .section5 {
-    padding: 60px 20px;
-    gap: 40px;
-  }
-
-  #telechargement {
-    gap: 30px;
-  }
-
-  .tel-card {
-    max-width: 100%;
-  }
+.theme2{
+    background-color: #FAF4E6;
+    padding: 0.5em;
+    border-radius: 20px;
+    border: 2.5px solid #1a1a1a;
+    display: inline-block;
+    color: black;
+    font-weight: 1000;
+    font-size: large;
 }
+
+#theme3{
+      background-color: #FAF4E6;
+    padding: 0.5em;
+    border-radius: 20px;
+    border: 2.5px solid #1a1a1a;
+    display: inline-block;
+    color: black;
+    font-weight: 1000;
+    font-size: large;
+}
+
