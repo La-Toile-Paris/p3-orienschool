@@ -1,202 +1,230 @@
 /* Le code CSS spécifique à la page de documentation */
 
-
 /* Body */
-
-body{
+body {
     background-color: antiquewhite;
 }
 
-h1, h2, h3{
+h1, h2, h3 {
     margin: 0;
 }
 
-p{
+p {
     margin: 0;
     font-weight: 600;
 }
 
-.logo{
-   width: 10%;
+.logo {
+    width: 10%;
 }
 
-/* Header */
+/* ── Badges thème ──────────────────────────────────────────────────────────── */
 
-#header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-}
-
-.header-all{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.header-texte{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 40%;
-}
-
-.btn-app{
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-    background-color: white;
-    padding: 1em;
-    border: 2.5px solid #1a1a1a;
-    border-radius: 5px;
-    box-shadow: 3px 3px 0px #1a1a1a;
-    color: black;
-    gap: 5px;
-}
-
-.btn-app img{
-    width: 20px;
-    height: 20px;
-}
-
-.btn-app-div{
-    display: flex;
-    gap: 20px;
-}
-
-.telephone{
-    height: 80vh;
-}
-
-.telephone2{
-    height: 80vh;
-}
-
-.theme{
+.theme {
     background-color: #66D57E;
-    padding: 0.5em;
+    padding: 0.5em 1em;
     border-radius: 20px;
     border: 2.5px solid #1a1a1a;
     color: black;
-    font-weight: 1000;
-    font-size: large;
+    font-weight: 800;
+    font-size: 1em;
+    display: inline-block;
 }
 
-.theme2{
+.theme2 {
     background-color: #FAF4E6;
-    padding: 0.5em;
+    padding: 0.5em 1em;
     border-radius: 20px;
     border: 2.5px solid #1a1a1a;
     display: inline-block;
     color: black;
-    font-weight: 1000;
-    font-size: large;
+    font-weight: 800;
+    font-size: 1em;
 }
 
-.theme3{
+.theme3 {
     background-color: #ffffff;
-    padding: 0.5em;
+    padding: 0.5em 1em;
     border-radius: 20px;
     border: 2.5px solid #1a1a1a;
     display: inline-block;
     color: black;
-    font-weight: 1000;
-    margin-bottom: 5em;
-    font-size: large;
+    font-weight: 800;
+    margin-bottom: 2em;
+    font-size: 1em;
 }
 
-.theme4{
+.theme4 {
     background-color: #ffffff;
-    padding: 0.5em;
+    padding: 0.5em 1em;
     border-radius: 20px;
     border: 2.5px solid #1a1a1a;
     display: inline-block;
     color: black;
     font-weight: 800;
     margin-bottom: 1em;
-    font-size: large;
+    font-size: 1em;
 }
 
-.theme5{
+.theme5 {
     background-color: #ffffff;
-    padding: 0.5em;
+    padding: 0.5em 1em;
     border-radius: 20px;
     border: 2.5px solid #1a1a1a;
     display: inline-block;
     color: black;
-    font-weight: 1000;
-    font-size: large;
+    font-weight: 800;
+    font-size: 1em;
 }
 
-/* Contexte */
+/* ── Sections — padding uniforme ──────────────────────────────────────────── */
 
-#section1{
-    background-color: #8C63E6;
+#header,
+#section1,
+#section2,
+#section3,
+#section4,
+#section5 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    padding: 80px 40px;
+    box-sizing: border-box;
 }
 
-.section1-all{
+/* Inner wrappers — max-width aligné sur la navbar */
+.header-all,
+.section1-all,
+.section2-all,
+.section3-all,
+.section4-all,
+.section5-all {
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* ── Hero banner ──────────────────────────────────────────────────────────── */
+
+#header {
+    min-height: 100vh;
+    padding-top: 120px; /* dégager la navbar fixe */
+}
+
+.header-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.header-texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.btn-app {
+    display: flex;
+    text-decoration: none;
+    background-color: white;
+    padding: 0.8em 1.2em;
+    border: 2.5px solid #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 3px 3px 0px #1a1a1a;
+    color: black;
+    gap: 8px;
+    align-items: center;
+    font-weight: 700;
+    transition: all 0.15s ease;
+}
+
+.btn-app:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0px #1a1a1a;
+}
+
+.btn-app img {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-app-div {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.telephone {
+    height: 60vh;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* ── Section 1 — Contexte ─────────────────────────────────────────────────── */
+
+#section1 {
+    background-color: #8C63E6;
+    min-height: 100vh;
+}
+
+.section1-all {
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 100px;
+    gap: 80px;
 }
 
-.section1-titre{
-    width: 500px;
-    font-size: larger;
+.section1-all .section1-titre,
+#section1 h1 {
+    color: black;
 }
 
-.garcon{
+.section1-titre {
+    font-size: 1.1em;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+.garcon {
     height: 50vh;
+    object-fit: cover;
     background-color: antiquewhite;
     border: 2.5px solid #1a1a1a;
-    border-radius: 5px;
-    box-shadow: 3px 3px 0px #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 5px 5px 0px #1a1a1a;
+    flex-shrink: 0;
 }
 
-.section1-all .section1-titre, #section1 h1 {
-    color: rgb(0, 0, 0);
-}
+/* ── Section 2 — Cibles et Personas ──────────────────────────────────────── */
 
-/* Cible et Persona */
-
-#section2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    padding-top: 5em;
-    padding-bottom: 5em;
+#section2 {
     background-color: #66D57E;
 }
 
-.section2-all{
+.section2-all {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
-.elise{
+.elise {
     border-radius: 50%;
     width: 20em;
     height: 20em;
     object-fit: cover;
     border: 2.5px solid #1a1a1a;
-    box-shadow: 3px 3px 0px #1a1a1a;
+    box-shadow: 5px 5px 0px #1a1a1a;
 }
 
-.carte{
+.carte {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,24 +232,24 @@ p{
     background-color: antiquewhite;
     padding: 2em;
     width: 40%;
-    height: 25vh;
     border-radius: 30px;
     border: 2.5px solid #1a1a1a;
     box-shadow: 3px 3px 0px #1a1a1a;
 }
 
-.carte h1,.carte p {
+.carte h1, .carte p {
     color: black;
 }
 
-.cibles{
+.cibles {
     width: 100px;
     height: 100px;
-    border-radius: 100%;
+    border-radius: 50%;
     object-fit: cover;
+    flex-shrink: 0;
 }
 
-.cibles-texte{
+.cibles-texte {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -232,300 +260,299 @@ p{
     color: black;
 }
 
-.cartes{
+.cartes {
     display: flex;
-    gap: 50px;
+    gap: 40px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5em;
     flex-wrap: wrap;
+    width: 100%;
 }
 
-.nom-persona{
-    margin-bottom: 100px;
+.nom-persona {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8em;
+    font-weight: 900;
 }
 
-.personna-et-texte{
+.personna-et-texte {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    width: 100%;
 }
 
-.persona-texte{
+.persona-texte {
     display: flex;
-    justify-content: center;
-    gap: 20px;
     flex-direction: column;
+    justify-content: center;
+    gap: 15px;
     background-color: antiquewhite;
-    width: 50%;
-    height: 40vh;
     padding: 2em;
+    flex: 1;
+    max-width: 500px;
     border: 2.5px solid #1a1a1a;
-    border-radius: 30px;
-    box-shadow: 3px 3px 0px #1a1a1a;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px #1a1a1a;
 }
 
-.ul-persona{
+.ul-persona {
     list-style: none;
+    padding: 0;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+/* ── Section 3 — Évolutions ───────────────────────────────────────────────── */
 
-/* L'évolution de l'app */
-
-#section3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    padding-top: 5em;
-    padding-bottom: 5em;
+#section3 {
     background-color: #ED5C8D;
 }
 
-.section3-all{
+.section3-all {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 }
 
-.section3-all h1{
-    margin-bottom: 2em;
+.section3-all h1 {
+    margin-bottom: 0;
 }
 
-/* À venir */
-
-#section4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    padding-top: 5em;
-    padding-bottom: 5em;
+.telephone2 {
+    height: 70vh;
+    width: auto;
+    object-fit: contain;
 }
 
-.section4-all{
+/* ── Section 4 — À venir ──────────────────────────────────────────────────── */
+
+#section4 {
+    background-color: #FFFFFF;
+}
+
+.section4-all {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 }
 
-.section4-cartes{
+.section4-cartes {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
-    gap: 50px;
+    gap: 30px;
     flex-wrap: wrap;
+    width: 100%;
 }
 
-.section4-carte{
+.section4-carte {
     background-color: white;
     border: 2.5px solid #1a1a1a;
-    border-radius: 30px;
-    box-shadow: 3px 3px 0px #1a1a1a;
+    border-radius: 20px;
+    box-shadow: 4px 4px 0px #1a1a1a;
     padding: 2em;
-}
-
-.espoirs-image{
-    width: 13%;
-    height: 10vh;
-}
-
-.espoirs-texte{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
     text-align: center;
 }
 
-.stress{
-    width: 70px;
-    height: 70px;
+.espoirs-image {
+    width: 60px;
+    height: 60px;
     object-fit: contain;
 }
 
-/* La team */
+.stress {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
 
-#section5{
+.espoirs-texte {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: fit-content;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    gap: 10px;
+    text-align: center;
+}
+
+/* ── Section 5 — La team ──────────────────────────────────────────────────── */
+
+#section5 {
     background-color: #FCA24A;
 }
 
-.section5-all{
+.section5-all {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: fit-content;
-    padding-top: 5em;
-    padding-bottom: 5em;
     gap: 50px;
 }
 
-.section5-cartes{
+.section5-cartes-all {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.section5-cartes {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 50px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.section5-cartes-all{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.section5-carte{
+.section5-carte {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    height: 20vh;
     background-color: white;
-    padding: 5em;
+    padding: 2.5em;
     border: 2.5px solid #1a1a1a;
-    border-radius: 30px;
-    box-shadow: 3px 3px 0px #1a1a1a;
+    border-radius: 20px;
+    box-shadow: 4px 4px 0px #1a1a1a;
+    gap: 15px;
+    flex: 1;
+    min-width: 200px;
+    max-width: 280px;
+    text-align: center;
 }
 
-.bitmoji{
-    width: 100%;
-    height: 20vh;
+.bitmoji {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
 }
 
-
-/* Format téléphone PAS TOUCHER */
+/* ── Responsive ───────────────────────────────────────────────────────────── */
 
 @media (max-width: 768px) {
-    .header-all{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
+    #header,
+    #section1,
+    #section2,
+    #section3,
+    #section4,
+    #section5 {
+        padding: 60px 20px;
     }
-    .header-texte{
+
+    #header {
+        padding-top: 100px;
+    }
+
+    .header-all {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
         text-align: center;
+    }
+
+    .header-texte {
+        align-items: center;
+    }
+
+    .telephone {
+        width: 60%;
+        height: auto;
+        max-height: 40vh;
+    }
+
+    .section1-all {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .garcon {
         width: 80%;
+        height: auto;
+        max-height: 35vh;
     }
-    .telephone{
-        width: 40%;
-        height: 40vh;
+
+    .telephone2 {
+        width: 80%;
+        height: auto;
+        max-height: 40vh;
     }
-    .section1-all{
-        flex-direction: column;
-    }
-    .section1-texte{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .section1-titre{
-        text-align: center;
+
+    .carte {
         width: 90%;
     }
-    .garcon{
-        width: 60%;
-        height: 35vh;
-    }
-    .telephone2{
-        width: 60%;
-        height: 20vh;
-    }
-    #section2{
-        height: 200vh;
-    }
-    .carte{
-        width: 80%;
-        height: 30vh;
-    }
-    .cartes{
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .personna-et-texte{
+
+    .cartes {
         flex-direction: column;
     }
-    .persona-texte{
-        width: 80%;
-        height: 20vh;
-    }
-    .section5-cartes{
+
+    .personna-et-texte {
         flex-direction: column;
+    }
+
+    .persona-texte {
+        max-width: 100%;
+    }
+
+    .section4-cartes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section4-carte {
+        max-width: 100%;
+    }
+
+    .section5-cartes {
+        flex-direction: column;
+    }
+
+    .section5-carte {
+        max-width: 100%;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .header-all{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    #header,
+    #section1,
+    #section2,
+    #section3,
+    #section4,
+    #section5 {
+        padding: 80px 30px;
+    }
+
+    #header {
+        padding-top: 120px;
+    }
+
+    .header-all {
+        gap: 40px;
+    }
+
+    .section1-all {
         gap: 50px;
     }
-    .header-texte{
-        text-align: center;
-        width: 80%;
+
+    .personna-et-texte {
+        gap: 30px;
     }
-    .telephone{
-        width: 40%;
-        height: 40vh;
-    }
-    .section1-all{
-        flex-direction: column;
-    }
-    .section1-texte{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .section1-titre{
-        text-align: center;
-        width: 90%;
-    }
-    .garcon{
-        width: 60%;
-        height: 35vh;
-    }
-    .telephone2{
-        width: 60%;
-        height: 20vh;
-    }
-    #section2{
-        height: 200vh;
-    }
-    .carte{
-        width: 80%;
-        height: 30vh;
-    }
-    .cartes{
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .personna-et-texte{
-        flex-direction: column;
-    }
-    .persona-texte{
-        width: 80%;
-        height: 20vh;
-    }
-    .section5-cartes{
-        flex-direction: column;
+
+    .section5-cartes {
+        gap: 20px;
     }
 }
